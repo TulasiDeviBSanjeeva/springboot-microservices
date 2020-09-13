@@ -4,6 +4,7 @@ public class MovieSummary {
 
     private String id;
     private String title;
+    private String tagline;
     private String overview;
 
     public String getId() {
@@ -28,5 +29,13 @@ public class MovieSummary {
 
     public void setOverview(String overview) {
         this.overview = overview;
+    }
+
+    public String getTagline() {
+        return tagline;
+    }
+
+    public void setTagline(String tagline) {
+        this.tagline = tagline;
     }
 }

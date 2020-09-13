@@ -4,15 +4,17 @@ public class Movie {
     private String movieId;
     private String name;
     private String description;
+    private String tagline;
 
     public Movie() {
 
     }
 
-    public Movie(String movieId, String name, String description) {
+    public Movie(String movieId, String name, String description, String tagline) {
         this.movieId = movieId;
         this.name = name;
         this.description = description;
+        this.tagline = tagline;
     }
 
     public String getMovieId() {
@@ -37,5 +39,13 @@ public class Movie {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getTagline() {
+        return tagline;
+    }
+
+    public void setTagline(String tagline) {
+        this.tagline = tagline;
     }
 }
